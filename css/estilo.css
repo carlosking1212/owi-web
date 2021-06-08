@@ -26,6 +26,7 @@ li{
     right: 0;
     margin: 35px;
     animation: zap-anin 2s infinite ease-in-out alternate;
+    z-index: 10000;
 }
 
 @keyframes zap-anin{
