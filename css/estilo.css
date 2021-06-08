@@ -1,0 +1,565 @@
+:root{
+    --cor-1: #fff;
+    --cor-2: #BA68C8;
+    --cor-3: #1F253A;
+    --cor-4: #5489FF;
+    --cor-5: #0B3077;
+    --cor-6: #F0F01B;
+    --bg-menu: rgb(45, 45, 114, 0.4);
+}
+
+html, body{
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+li{
+    list-style: none;
+}
+
+.zap{
+    width: 70px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 35px;
+    animation: zap-anin 2s infinite ease-in-out alternate;
+}
+
+@keyframes zap-anin{
+    0%{
+        /* transform: scaleX(1); */
+        transform: rotateY(0deg);
+    }
+    100%{
+        /* transform: scaleX(-1); */
+        transform: rotateY(180deg);
+    }
+}
+
+/* ------------barra menu------------- */
+/* ----------------------------------- */
+.menu{
+    position:fixed;
+    top: -100px;
+    width: 100%;
+    z-index: 100;
+    background: var(--bg-menu);
+    animation: menu-anin 1s forwards;
+    animation-delay: 1.5s;
+}
+
+@keyframes menu-anin{
+    0%{
+        top: -100px;
+    }
+    100%{
+        top: 0;
+    }
+}
+
+.nav-item.active{
+    border-bottom: 2px solid var(--cor-2);
+}
+
+.logo{
+    font-weight: 900;
+    font-size: 30px;
+    color: var(--cor-2);
+}
+
+.nav-item{
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid transparent;
+}
+
+.navbar-dark .navbar-toggler{
+    border-color: var(--cor-2);
+}
+
+li.nav-item:hover{
+    border-bottom: 2px solid var(--cor-2);
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    color: var(--cor-1);
+}
+
+/* ----------fim menu ---------------*/
+/* --------------------------------- */
+
+/* -----------inicio capa----------------- */
+/* ---------------------------------- */
+.bg-tema{
+    background:rgba(0, 0, 0, .4) url(../imagens/capa.png) no-repeat center top;
+    background-blend-mode: darken;
+    height: 100vh;
+}
+
+.sobrepor{
+    background: linear-gradient(rgba(0, 0, 0, 0.7));
+    z-index:1333333;
+    height: 100vh;
+    position:fixed;
+}
+
+.caixa{
+    height: 100vh;
+}
+
+.mensagem-1{
+    width: 100%;
+    height: 100vh;
+    margin-left: 50px;
+    font-size: large;
+    color: var(--cor-1);
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+.mensagem-1>h1{
+    position: relative;
+    opacity: 0;
+    width: 100%;
+    left: -1600px;
+    font-size: 90px;
+    font-weight: 900;
+    animation: mensagem-anin 2s forwards;
+}
+
+.mensagem-1>p{
+    position: relative;
+    left: -400px;
+    animation: mensagem-anin 2s forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes mensagem-anin{
+    0%{
+        left: -1400px;
+        opacity: 0;
+    }
+    100%{
+        left: 0;
+        opacity: 1;
+    }
+}
+
+.caixa-logo{
+    margin: 0 auto;
+}
+
+.image-logo{
+    position: relative;
+    right: -600px;
+    opacity: 0;
+    animation: logo-anim 2s forwards;
+}
+
+@keyframes logo-anim{
+    from{
+        opacity: 0;
+        right: -600px;
+    }
+    to{
+        opacity: 1;
+        right: 0;
+    }
+}
+
+/* -----------fim capa----------------- */
+/* ------------------------------------ */
+
+
+/* --------------secao sobre----------------- -*/
+/* -------------------------------------- */
+
+.secao-1{
+    background: var(--cor-3) 
+    url(../imagens/GRAFICO.png) no-repeat right;
+    height:100vh;
+    width: 100%;
+    
+}
+
+.fundo-secao-1{
+    width: 100%;
+    height: 60vh;
+    background:url(../imagens/Operating\ system-rafiki.png) no-repeat bottom left;
+    background-size: 700px;
+}
+
+.texto-sobre-1{
+    color: var(--cor-4);
+    display: flex;
+    align-items: center;
+}
+
+.anim-sobre-off{
+    position: relative;
+    opacity: 0;
+    /* animation: anim 2s forwards;
+    animation-delay: 1s; */
+}
+.anim-sobre-left{
+    animation: anim-left 1.5s forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes anim-left{
+    from{
+        position: relative;
+        left: -500px;
+        opacity: 0;
+    }
+    to{
+        left: 0px;
+        opacity: 1;
+    }
+}
+
+.anim-sobre-right{
+    animation: anim-right 1.5s forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes anim-right{
+    from{
+        position: relative;
+        right: -700px;
+        opacity: 0;
+    }
+    to{
+        right: 0px;
+        opacity: 1;
+    }
+}
+
+.texto-sobre-1>h2{
+    font-weight: 900;
+    font-style: bold;
+    font-size: 45px;
+    margin-left: 50px;
+}
+
+.texto-sobre-2{
+    color: var(--cor-2);
+    display: flex;
+    align-items: center;
+}
+
+.texto-sobre-2>h2{
+    font-weight: 900;
+    font-style: bold;
+    font-size: 45px;
+    margin-top: 130px;
+}
+
+.sobre-p{
+    /* margin-left: 15px; */
+    font-size: 25px;
+}
+
+/* --------------fim secao sobre----------------*/
+/* -------------------------------------- */
+
+
+
+/* ---------------Como funciona----------------- */
+/* ---------------------------------------------- */
+
+#como-funciona{
+    width: 100%;
+    background: url(../imagens/Elipse\ 6.png) no-repeat left,
+    url(../imagens/Grupo\ 34.png) no-repeat center top;
+}
+
+.secao-2 h1{
+    color: var(--cor-1);
+    font-weight:900;
+    font-size: 75px;
+}
+
+.secao-2>div>div>p {
+    color: var(--cor-5);
+    font-weight:900;
+    font-size: 20px;
+} 
+
+.cf-sesao2{
+    display: flex;
+    align-items: center;
+    align-self: center;
+}
+
+.cf-sesao2 li{
+    list-style: none;
+    margin-top: 40px;
+    color: var(--cor-1);
+    font-size: 30px;
+    margin-left: -20px;
+}
+
+.cf-sesao2 li>span{
+    color: var(--cor-5);
+}
+
+.cf-sesao3>div>p{
+    margin-top: 50px;
+    font-size: 30px;
+    color: var(--cor-1);
+}
+
+.cf-sesao3 img{
+    margin: auto;
+    display: flex;
+}
+
+.botao-contratar{
+    width: 290px;
+    border-radius: 10px;
+    color: var(--cor-5);
+    font-weight: 900;
+    font-size: 20px;
+    background: var(--cor-6);
+    margin-top: -20px;
+    transition: 0.3s ease-in;
+    -webkit-transition: 0.3s ease-in;
+}
+.botao-contratar:hover{
+    transform: scale(1.3);
+    transition: 0.3s ease-in;
+    -webkit-transition: 0.3s ease-in;
+}
+.off{
+    opacity: 0;
+}
+.anim-cf-funciona{
+    position: relative;
+    opacity: 0;
+    animation: cf-anim1 2s forwards;
+    animation-delay: 1s;
+}
+
+.anim-cf-funciona1{
+    position: relative;
+    opacity: 0;
+    animation: cf-anim1 2s forwards;
+    animation-delay: 1.5s;
+}
+
+.anim-cf-funciona2{
+    position: relative;
+    opacity: 0;
+    animation: cf-anim1 2s forwards;
+    animation-delay: 3s;
+}
+
+@keyframes cf-anim1{
+    from{
+        top: 700px;
+        opacity: 0;
+    }
+    to{
+        top: 0;
+        opacity: 1;
+    }
+}
+
+/* ---------------Fim Como funciona-------------- */
+/* ---------------------------------------------- */
+
+      /* ---------------Planos------------- */
+/* ----------------------------------------------- */
+#planos{
+    background: var(--cor-4) url(../imagens/dinheiro-1.png) no-repeat center;
+    background-size: contain;
+}
+
+.bg-fundo-plano{
+    background: url(../imagens/Caminho\ 559.png) no-repeat right top,
+                url(../imagens/Caminho\ 325.png) no-repeat left bottom;
+    padding-top: 130px;
+}
+
+.lista{
+    padding-top: 10px;
+    background: var(--bg-menu);
+}
+
+#planos h1{
+    font-weight: 900;
+    color: var(--cor-1);
+}
+
+#planos li{
+    /* margin: 0 auto; */
+    color: var(--cor-1);
+    display: inline;
+}
+
+#planos p{
+    font-size: 24px;
+    margin-left: 15px;
+}
+
+#planos li i{
+    color: lawngreen;
+    font-size: 45px;
+}
+
+.logos-pesquisas{
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    height: 10vh;
+}
+
+.anim-google{
+    position:relative;
+    animation: anim-g 2s forwards;
+    animation-play-state:paused;
+    animation-delay: 1s;
+    opacity: 0;
+}
+
+@keyframes anim-g{
+    0%{
+        left: -320px;
+        opacity: 0;
+    }
+    100%{
+        left: 0px;
+        opacity: 1;
+    }
+}
+.anim-yahoo{
+    position:relative;
+    animation: anim-y 2s forwards;
+    animation-play-state:paused;
+    animation-delay: 1s;
+    opacity: 0;
+}
+@keyframes anim-y{
+    0%{
+        bottom: -320px;
+        opacity: 0;
+    }
+    100%{
+        bottom: 0px;
+        opacity: 1;
+    }
+}
+.anim-bing{
+    position:relative;
+    animation: anim-b 2s forwards;
+    animation-play-state:paused;
+    animation-delay: 1s;
+    opacity: 0;
+}
+@keyframes anim-b{
+    0%{
+        right: -320px;
+        opacity: 0;
+    }
+    100%{
+        right: 0px;
+        opacity: 1;
+    }
+}
+
+.titulo-planos{
+    font-weight: 900;
+    color: var(--cor-5);
+    text-align: center;
+}
+
+.anim-h2{
+    opacity: 0;
+    animation: fade-texto 2s forwards;
+    animation-play-state: paused;
+    animation-delay: 0.5s;
+}
+
+@keyframes fade-texto{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.logos-p{
+    filter: drop-shadow(12px 12px 29px rgb(0, 0, 0));
+    transition: 0.3s ease-in;
+    -webkit-transition: 0.3s ease-in;
+}
+
+.logos-p:hover{
+    transform: scale(1.3);
+    transition: 0.3s ease-in;
+    -webkit-transition: 0.3s ease-in;
+}
+
+#controle-total h2{
+    font-weight: 900;
+    color: var(--cor-5);
+}
+#controle-total p{
+    color: var(--cor-1);
+}
+
+#controle-total a{
+    margin: 0 auto;
+}
+
+.caixa-botao{
+    display: flex;
+}
+
+.anim-planos2{
+    position:relative;
+    bottom: -400px;
+    animation: an-planos2 1s forwards;
+    animation-play-state:paused;
+    /* animation-delay: 1s; */
+    opacity:0;
+}
+
+@keyframes an-planos2{
+    0%{
+        bottom: -400px;
+    }
+    100%{
+        bottom: 0;
+        opacity:1;
+    }
+}
+
+/* --------------------fim------------------------- */
+/* ------------------------------------------------- */
+
+/*       footer        */
+
+footer{
+    background-color: var(--cor-3);
+    color: var(--cor-4);
+    font-size: 15px;
+    border-top:2px solid var(--cor-1);
+}
+
+footer a i{
+    font-size: 40px;
+    margin: 0 20px;
+    color: var(--cor-4);
+}
+
+/*                     */
+
+.teste{
+    border: 2px solid red;
+}

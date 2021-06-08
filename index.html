@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+  <head>
+        <title>owi-web</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <!-- <link rel="stylesheet" type="text/css" href="//assets.locaweb.com.br/locastyle/2.0.6/stylesheets/locastyle.css"> -->
+
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/estilo.css">
+        <link rel="stylesheet" href="./css/responsivo.css">
+        <script src="./script/script.js"></script>
+
+    </head>
+
+    <body>
+
+        <!-- <h1 style="position: fixed;" class="contador"></h1> -->
+
+        <nav class="navbar navbar-dark navbar-expand-lg menu">
+
+            <div class="container-fluid">
+                <a class="navbar logo" href="#">OWI-WEB</a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li id="link-inicio" class="nav-item active">
+                            <a class="nav-link" href="#inicio">Inicio<span class="sr-only">(Página atual)</span></a>
+                        </li>
+                        <li id="link-sobre"  class="nav-item">
+                            <a class="nav-link" href="#sobre">Sobre</a>
+                        </li>
+                        <li id="link-como-funciona" class="nav-item">
+                            <a class="nav-link" href="#como-funciona">Como funciona</a>
+                        </li>
+                        <li id="link-planos" class="nav-item">
+                            <a class="nav-link" href="#planos">Plano</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap" href="#">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            
+            
+        </nav>
+
+        <header class="bg-tema">
+            
+            <div class="sobrepor"></div>
+
+            <!-- contato -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Contato</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form target="_blank" action="https://formspree.io/f/xjvjwjyw" method="POST">
+
+                                <div class="form-group">
+                                    <label for="recipient-name" class="col-form-label">Seu nome:</label>
+                                    <input type="text" class="form-control" name="name" id="name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="recipient-name" class="col-form-label">E-mail: (opcional)</label>
+                                    <input type="text" class="form-control" name="email" id="email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="recipient-name" class="col-form-label">Celular: Ex: (11) 93533-2342</label>
+                                    <input type="text" data-mask="(00)00000-0000" class="form-control" name="celular" id="celular" >
+                                </div>
+                                <div class="form-group">
+                                    <label for="message-text" class="col-form-label">Mensagem:</label>
+                                    <textarea class="form-control" name="MESSAGE" id="msg"></textarea>
+                                </div>
+                                
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                <button type="submit" class="btn btn-primary" value="Enviar">Enviar</button>
+                            </form>
+                        
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+             <!-- contato fim -->
+
+            <div class="container-fluid">
+                <span id="inicio"></span>
+                <div class="row">
+                    <div class="col-lg-6 caixa">
+                        <div class="mensagem-1 row">
+                            <h1 class="col-12">Criamos seu<br>Site Profissional</h1>
+                            <p class="col">Podemos criar um site profissional para<br>
+                               o seu negócio bomba nas rede sociais</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-flex justify-content-center">
+                        <div class="image-logo d-flex align-self-center">
+                            <img class="img-fluid" src="./imagens/LOGO.svg" width="600" alt="">
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <div class="zap">
+                <a target="_blank" href="https://api.whatsapp.com/send?phone=5511987154601&text=tenho%20interesse%20sobre%20cria%20um%20site"><img class="img-fluid" src="./imagens/whatsapp.png" alt=""></a>
+            </div>
+        </header>
+
+        <section id="sobre" class="secao-1">
+            <div class="row secao-responsiva">
+                <div id="anim-sobre-left" class="col-lg-6 anim-sobre-off">
+                    <div  class="col-lg-12 w-100 h-50 ml-auto texto-sobre-1 ">
+                        <h2>Que tal dar uma<br>turbinada em seu negocio.</h2>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="fundo-secao-1"></div>
+                    </div>
+                </div>
+                <div id="anim-sobre-right" class="col-lg-6 anim-sobre-off">
+                    <div class=" texto-sobre-2 w-100 h-100 row">
+                        <h2 class="col-lg-12">Somos especialista em<br>pequenas empresas<br>e-commerce</h2>
+                        <p class="text-white sobre-p col-lg-12">
+                            De um passo para seu futuro com OWI WEB.<br>
+                            Saia na frente de seus
+                            concorrentes, com um site<br>
+                            profissional e inovador.<br><br>
+                            Desenvolvimento completo de sites (Delivery, E-Commerce,<br>
+                            Blog e outros) modernos, dinâmicos e responsivos, sua<br>
+                            empresa 24h de portas abertas.
+
+                            <span id="sobre-borda"></span>
+
+                            <br><br><i class="fas fa-laptop-code"></i> Tecnologia de Ponta
+                            <br><br><i class="fas fa-mobile-alt"></i> Sites responsivos
+                            <br><br><i class="fas fa-rocket"></i> Site Otimizado para o Google
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <section style="background-color: var(--cor-4);">
+            <div id="como-funciona" class="secao-2">
+
+                <div class="row">
+                    <div id="cf-anim1" class="col-lg-12 mt-5 text-center off">
+                        <h1>Como funciona</h1>
+                        <p>
+                            você cuida do seu negócio,<br> os profissionais da OWI WEB montam<br>
+                            o seu site em apenas 7 dias.
+                        </p>
+                    </div>
+                    <div class="col-lg-4 cf-sesao1">
+                        <img class="img-fluid" src="./imagens/Business Plan-amico.png" alt="">
+                    </div>
+                    <div id="cf-anim2" class="col-lg-4 cf-sesao2">
+                        <ul>
+                            <li>
+                                <span>1</span>
+                                Entramos em contato para saber <br>
+                                &nbsp;&nbsp; mais sobre o seu negócio.
+                            </li>
+                            <li>
+                                <span>2</span>
+                                Começamos a criar sum site ideal<br>
+                                &nbsp;&nbsp; para as suas necessidades.
+                            </li>
+                            <span id="cf-borda"></span>
+                            <li>
+                                <span>3</span>
+                                Contas de e-mail com seu dominio.
+                            </li>
+                            <li>
+                                <span>4</span>
+                                Após sua aprovação, o seu site já vai<br>
+                                &nbsp;&nbsp; para o ar.
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="cf-anim3" class="col-lg-4 cf-sesao3">
+                        <div class="col-lg-12">
+                            <p>
+                                100GB de espaço<br>
+                                Criação de até 3 páginas<br>
+                                para E-Commerce.
+                            </p>
+                        </div>
+                        <div class="col-lg-12">
+                            <img class="img-fluid" src="./imagens/Programming-rafiki.png" alt="">
+                        </div>
+                    </div>
+
+                    <div id="cf-anim4" class="col-lg-12 text-center">
+                        <img class="img-fluid" src="./imagens/Grupo 97.png" alt=""><br>
+                        <a target="_blank" href="https://api.whatsapp.com/send?phone=5511987154601&text=tenho%20interesse%20sobre%20cria%20um%20site"><button id="btn-contratar" class="btn botao-contratar">Contratar Básico</button></a>
+                        <br><p>Periodo de contratação<br>12 meses.</p>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </section>
+
+        <section id="planos">
+            <div class="container-fluid bg-fundo-plano">
+                <div class="row ">
+                    <div class="col-lg-12 text-center">
+                        <img class="anim-h2" src="./imagens/desenvolvimento.png" alt="">
+                        <h1 class="display-4 anim-planos2"><strong>Plano para empresas em<br> desenvolvimento</strong></h1>
+                    </div>
+                    <div class="col-lg-12 lista anim-h2 mt-5">
+                        <h2 class="text-center titulo-planos">O Site de sua empresa em boas mãos</h2>
+                        <ul class="mt-5 row anim-planos2">
+                            <li class="col-lg-4">
+                                <i class="fas fa-headset"></i>
+                                <p>
+                                    Suporte 24 Horas<br>
+                                    Conte com nosso suporte 24 Horas para o 
+                                    Site de sua empresa. Chame e seja 
+                                    atendido no mesmo momento.
+                                </p>
+                            </li>
+                            <li class="col-lg-4">
+                                <i class="fas fa-book"></i>
+                                <p>
+                                    Receba Treinamentos<br>
+                                    Disponibilizamos treinamentos Online para aprenderem a utilizar toda a plataforma do Site.
+                                </p>
+                            </li>
+                            <li class="col-lg-4">
+                                <i class="fas fa-sync"></i>
+                                <p>
+                                    Atualizações Sempre<br>
+                                    Mantemos o site de sua empresa sempre atualizado com as melhores ferramentas do mercado.
+                                </p>
+                            </li>
+                        </ul>      
+                    </div>
+                    <span id="pl-borda"></span>
+                    <div class="col-lg-12 mt-5">
+                        <h2 class="titulo-planos anim-planos2">Seu Site Visível Para O Público Nas Maiores Plataformas De Pesquisas</h2>
+                        <div id="anim-pesquisas" class="logos-pesquisas d-flex justify-items-center">
+                            <img class="img-fluid logos-p anim-google" src="./imagens/google.png"  alt="google">
+                            <img class="img-fluid logos-p anim-yahoo" src="./imagens/yahoo.png" alt="yahoo">
+                            <img class="img-fluid logos-p anim-bing" src="./imagens/bing.png" alt="bing">                  
+                        </div>
+                    </div>
+                    <div id="controle-total" class="col-lg-12 mt-5">
+                        <div class="container">
+                            <h2 class="text-center mt-5 mb-4">Tenha controle total de seu site</h2>
+                            <p>
+                                Nossos sites são criados em WordPress, 
+                                a maior e melhor plataforma para gerenciar 
+                                conteúdo na internet. Através de um painel 
+                                administrativo você terá autonomia para 
+                                mudar textos, imagens, vídeos e até mesmo 
+                                criar páginas adicionais.<br>
+                                Ao final vc recebera seu login e senha para poder adicionar fotos, videos ou paginas adicionais.
+                            </p>
+                            <div class="caixa-botao">
+                                <a target="_blank" href="https://api.whatsapp.com/send?phone=5511987154601&text=tenho%20interesse%20sobre%20cria%20um%20site"><button id="btn-contratar" class="btn botao-contratar mt-5 mb-5">Peça um orçamento</button></a>
+                            </div>
+                        </div>                  
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer >
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-lg-4 mt-5 mb-5">
+                        &copy;2021 - OWI-WEB
+                    </div>
+                    <div class="col-lg-4 mt-5 mb-5">
+                        <a class="" href="#">TOPO</a>
+                    </div>
+                    <div class="col-lg-4 mt-5 mb-5">
+                        <a href=""><i class="fab fa-whatsapp"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                    </div>
+                    
+                </div>
+            </div>
+        </footer>
+        
+      
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script type="text/javascript" src="//assets.locaweb.com.br/locastyle/2.0.6/javascripts/locastyle.js"></script>
+        <!-- <script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+
+</html>
